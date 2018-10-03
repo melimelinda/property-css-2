@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout content</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		/*Tiga kolom float yang panjang ke bawahnya tidak sama*/
+		.aside, .article{
+			float: left;
+			padding: 10 px;
+		}
+		/* Kolom pertama dan ketiga*/
+		.aside{
+			width: 25%;
+		}
+		/*kolom kedua*/
+		.article{
+			width: 50%;
+		}
+		/* responsive layout - kolom di container menjadi baris*/
+		@media(max-width: 600px){
+			.aside, .article{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+		<div class="article">
+			<h2>Main Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit necneque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam palcerat, purus leo tincidunt eros, eget luctus quam orci in velit.praesent scelerisque tortor sed accumsan convallis.</p>
+			<p>Lorem ipsum dolor sit amet, consectur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit necneque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam palcerat, purus leo tincidunt eros, eget luctus quam orci in velit.praesent scelerisque tortor sed accumsan convallis.</p>
+		</div>
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+	</div>
+</body>
+</html>
